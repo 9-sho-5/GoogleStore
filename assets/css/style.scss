@@ -1,13 +1,12 @@
 *{
     font-family:'Roboto';
-    color: #3c4043;
     letter-spacing: .25px;
 }
 .arrow{
     width: 6px;
     height: 6px;
-    border-top: 1px solid #7a0;
-    border-right: 1px solid #7a0;
+    border-top: 1px solid #3c4043;
+    border-right: 1px solid #3c4043;
     transform: rotate(135deg);
 
     margin-left: 8px;
@@ -41,6 +40,11 @@ header{
                 }
             }
             button{
+                color: #423f3f;
+                line-height: 20px;
+                font-size: 14px;
+                font-weight: 400;
+
                 background-color: transparent;
                 border: 0;
                 cursor: pointer;
@@ -69,6 +73,100 @@ header{
                 width: 20px;
                 height: 20dpx;
                 color: #5f6368;
+            }
+        }
+    }
+}
+
+main{
+    margin-top: 56px;
+}
+
+footer{
+    padding: 0 24px;
+    .link-lists{
+        display: flex;
+        justify-content: end;
+        column-gap: 16px;
+
+        width: 100%;
+        padding: 96px 72px;
+
+        .links{
+            width: 164px;
+        }
+        ul{
+            .links-li{
+                margin-top: 24px;
+                &:first-child{
+                    margin-top: 0;
+                }
+                span{
+                    color: #423f3f;
+                    font-size: 14px;
+                    line-height: 22px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .link-bar-wrap{
+        height: 52px;
+        padding: 0 72px;
+        .link-bar{
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 0;
+            border-top: 1px solid #f2f2f2;
+            .link-bar-left{
+                ul{
+                    display: flex;
+                    .sns-icon{
+                        margin-left: 16px;
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                        a{
+                            display: block;
+                            width: 100%;
+                            height: fit-content;
+                            img{
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .link-bar-right{
+                ul{
+                    display: flex;
+                    align-items: center;
+                    .link{
+                        margin-left: 40px;
+
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                        a{
+                            display: flex;
+                            .flag{
+                                background-image: url(https://ssl.gstatic.com/store/images/regionflags/japan.png);
+                                background-size: 100% 100%;
+                                height: 18px;
+                                width: 24px;
+                                margin-right: 12px;
+                            }
+                            span{
+                                color: #423f3f;
+                                font-size: 11px;
+                                font-family: "Google Sans",arial,sans-serif;
+                                font-weight: 400;
+                                line-height: 16px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
