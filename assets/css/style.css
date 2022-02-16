@@ -240,9 +240,16 @@ header .header-left .hum-menu[data-state="active"] .window-fixed .window .window
   font-weight: 500;
 }
 
-header .header-left .item.logo svg {
+header .header-left .item.logo .res-main {
   vertical-align: middle;
   width: 134px;
+  height: 24px;
+}
+
+header .header-left .item.logo .res-600 {
+  display: none;
+  vertical-align: middle;
+  width: 24px;
   height: 24px;
 }
 
@@ -289,6 +296,10 @@ header .header-right .item {
 header .header-right .item img {
   width: 20px;
   height: 20dpx;
+}
+
+header .header-right .item.res-1014 {
+  display: block;
 }
 
 main {
@@ -499,6 +510,21 @@ footer .link-bar-wrap .link-bar .link-bar-right ul .link a span {
   }
   header .header-left .hum-menu {
     display: block;
+  }
+}
+
+@media screen and (max-width: 1014px) {
+  header .header-right .item.res-1014 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header .header-left .item.logo .res-600 {
+    display: block;
+  }
+  header .header-left .item.logo .res-main {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

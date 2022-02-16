@@ -201,9 +201,15 @@ header{
 
         .item{
             &.logo{
-                svg{
+                .res-main{
                     vertical-align: middle;
                     width: 134px;
+                    height: 24px;
+                }
+                .res-600{
+                    display: none;
+                    vertical-align: middle;
+                    width: 24px;
                     height: 24px;
                 }
             }
@@ -240,6 +246,9 @@ header{
             img{
                 width: 20px;
                 height: 20dpx;
+            }
+            &.res-1014{
+                display: block;
             }
         }
     }
@@ -420,6 +429,34 @@ footer{
             }
             .hum-menu{
                 display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1014px) {
+    header{
+        .header-right{
+            .item{
+                &.res-1014{
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        .header-left{
+            .item.logo{
+                .res-600{
+                    display: block;
+                }
+                .res-main{
+                    display: none;
+                }
             }
         }
     }
