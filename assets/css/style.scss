@@ -121,7 +121,10 @@ header{
                         height: 100%;
     
                         background-color: #f8f9fa;
-                        
+                        .window-upper-wrap{
+                            width: 100%;
+                            background-color: white;
+                        }
                         .window-upper{
                             max-width: 560px;
                             width: 100%;

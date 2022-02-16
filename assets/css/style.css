@@ -146,6 +146,11 @@ header .header-left .hum-menu[data-state="active"] .window-fixed .window {
   background-color: #f8f9fa;
 }
 
+header .header-left .hum-menu[data-state="active"] .window-fixed .window .window-upper-wrap {
+  width: 100%;
+  background-color: white;
+}
+
 header .header-left .hum-menu[data-state="active"] .window-fixed .window .window-upper {
   max-width: 560px;
   width: 100%;
