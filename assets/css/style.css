@@ -7,6 +7,12 @@ body {
   overflow-y: auto;
 }
 
+a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .arrow {
   width: 6px;
   height: 6px;
@@ -146,6 +152,11 @@ header .header-left .hum-menu[data-state="active"] .window-fixed .window {
   background-color: #f8f9fa;
 }
 
+header .header-left .hum-menu[data-state="active"] .window-fixed .window .window-upper-wrap {
+  width: 100%;
+  background-color: white;
+}
+
 header .header-left .hum-menu[data-state="active"] .window-fixed .window .window-upper {
   max-width: 560px;
   width: 100%;
@@ -226,6 +237,9 @@ header .header-left .hum-menu[data-state="active"] .window-fixed .window .window
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 header .header-left .hum-menu[data-state="active"] .window-fixed .window .window-lower a .icon {
