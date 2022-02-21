@@ -352,6 +352,7 @@ main .tx-wrap .tx {
   max-width: 524px;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 400;
 }
 
 main .tx-wrap .btn {
@@ -636,6 +637,22 @@ footer .link-bar-wrap .link-bar .link-bar-right ul .link a span {
   header .header-left .hum-menu {
     display: block;
   }
+  main .tx-wrap {
+    max-width: 456px;
+    margin: 0 auto;
+  }
+  main .tx-wrap.grid-col2_10 {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-column-span: 10;
+        grid-column-end: span 10;
+    padding: 40px 0;
+  }
+  main .tx-wrap .title {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
   main .mv-banner {
     height: 100%;
     display: -ms-grid;
@@ -684,21 +701,26 @@ footer .link-bar-wrap .link-bar .link-bar-right ul .link a span {
     width: 100%;
     height: 100%;
   }
-  main .tx-wrap {
+  main .content .title {
     max-width: 456px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  main .content .scroll-wrap .prod-scroll-wrap {
+    max-width: 633px;
     margin: 0 auto;
   }
-  main .tx-wrap.grid-col2_10 {
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    -ms-grid-column-span: 10;
-        grid-column-end: span 10;
-    padding: 40px 0;
+  main .content .prod-wrap .prod {
+    width: 136px;
   }
-  main .tx-wrap .title {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1px;
+  main .content .prod-wrap .prod a .tx-wrap {
+    padding: 16px 0 0;
+  }
+  main .content .prod-wrap .prod a .tx-wrap .prod-name {
+    font-size: 18px;
+    line-height: 22px;
   }
   footer .link-lists {
     padding: 96px 32px 72px;
