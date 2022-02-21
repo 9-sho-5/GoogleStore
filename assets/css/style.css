@@ -600,11 +600,55 @@ footer .link-bar-wrap .link-bar .link-bar-right ul .link a span {
     line-height: 40px;
     letter-spacing: -1px;
   }
+  footer .link-lists {
+    padding: 96px 32px 72px;
+  }
+  footer .link-lists .links {
+    width: 152px;
+  }
+  footer .link-bar-wrap {
+    height: auto;
+    padding: 0 32px;
+  }
+  footer .link-bar-wrap .link-bar {
+    display: block;
+  }
+  footer .link-bar-wrap .link-bar .link-bar-left {
+    margin-bottom: 20px;
+  }
+  footer .link-bar-wrap .link-bar .link-bar-right ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .link-bar-wrap .link-bar .link-bar-right ul .link {
+    margin-left: 0;
+    margin-right: 16px;
+    margin-top: 8px;
+  }
+  footer .link-bar-wrap .link-bar .link-bar-right ul .link:last-child {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 1014px) {
   header .header-right .item.res-1014 {
     display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  footer {
+    margin-top: 40px;
+  }
+  footer .link-lists {
+    padding: 40px 8px 20px;
+    display: block;
+  }
+  footer .link-lists .links {
+    margin-bottom: 24px;
+  }
+  footer .link-bar-wrap {
+    padding: 0 8px;
   }
 }
 
