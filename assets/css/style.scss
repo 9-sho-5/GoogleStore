@@ -47,13 +47,20 @@ button{
 }
 
 .m-auto{
-    margin: auto;
+    margin: 0 auto;
 }
 .mt-20{
     margin-top: 20px;
 }
+.mb-20{
+    margin-bottom: 20px;
+}
 .mt-24{
     margin-top: 24px;
+}
+.px-24{
+    padding: 0 24px;
+    margin: 0 auto;
 }
 
 
@@ -276,6 +283,16 @@ main{
             grid-column-start: 2;
             grid-column-end: span 4;
         }
+        &.grid-col1_6{
+            padding: 40px;
+            height: auto;
+            grid-column-start: 1;
+            grid-column-end: span 6;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
         
         .title, .tx{
             color: #3c4043;
@@ -287,6 +304,12 @@ main{
             font-size: 60px;
             line-height: 68px;
             letter-spacing: -2px;
+        }
+        .content-banner-title{
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.5px;
         }
         .tx{
             font-family: 'Lato', sans-serif !important;
@@ -320,6 +343,11 @@ main{
         margin: 0 auto;
         max-width: 1392px;
         width: 100%;
+
+        &.content-banner{
+            min-height: unset;
+        }
+
         video{
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
@@ -334,6 +362,12 @@ main{
         .mv-picture{
             display: none;
         }
+        .content-banner-picture{
+            display: block;
+            img{
+                width: 100%;
+            }
+        }
 
         .mv-grid-wrap{
             position: absolute;
@@ -342,14 +376,20 @@ main{
             grid-column-end: span 6;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
+
+            &.content-banner-grid-wrap{
+                column-gap: 24px;
+                height: 100%;
+            }
         }
+        
     }
 
     .content{
         margin-top: 80px;
         color: #3c4043;
         
-        .title{
+        .content-title{
             font-weight: 600;
             font-size: 32px;
             line-height: 40px;
@@ -569,7 +609,7 @@ footer{
             }
         }
         .content{
-            .title{
+            .content-title{
                 max-width: 456px;
                 margin-left: auto;
                 margin-right: auto;

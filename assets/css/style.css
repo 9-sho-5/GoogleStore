@@ -50,15 +50,24 @@ button {
 }
 
 .m-auto {
-  margin: auto;
+  margin: 0 auto;
 }
 
 .mt-20 {
   margin-top: 20px;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .mt-24 {
   margin-top: 24px;
+}
+
+.px-24 {
+  padding: 0 24px;
+  margin: 0 auto;
 }
 
 header {
@@ -335,6 +344,25 @@ main .tx-wrap.grid-col2_4 {
       grid-column-end: span 4;
 }
 
+main .tx-wrap.grid-col1_6 {
+  padding: 40px;
+  height: auto;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 6;
+      grid-column-end: span 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 main .tx-wrap .title, main .tx-wrap .tx {
   color: #3c4043;
 }
@@ -345,6 +373,13 @@ main .tx-wrap .title {
   font-size: 60px;
   line-height: 68px;
   letter-spacing: -2px;
+}
+
+main .tx-wrap .content-banner-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
 }
 
 main .tx-wrap .tx {
@@ -385,6 +420,10 @@ main .mv-banner {
   width: 100%;
 }
 
+main .mv-banner.content-banner {
+  min-height: unset;
+}
+
 main .mv-banner video {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
@@ -403,6 +442,14 @@ main .mv-banner .mv-picture {
   display: none;
 }
 
+main .mv-banner .content-banner-picture {
+  display: block;
+}
+
+main .mv-banner .content-banner-picture img {
+  width: 100%;
+}
+
 main .mv-banner .mv-grid-wrap {
   position: absolute;
   top: 0;
@@ -416,12 +463,18 @@ main .mv-banner .mv-grid-wrap {
       grid-template-columns: repeat(12, 1fr);
 }
 
+main .mv-banner .mv-grid-wrap.content-banner-grid-wrap {
+  -webkit-column-gap: 24px;
+          column-gap: 24px;
+  height: 100%;
+}
+
 main .content {
   margin-top: 80px;
   color: #3c4043;
 }
 
-main .content .title {
+main .content .content-title {
   font-weight: 600;
   font-size: 32px;
   line-height: 40px;
@@ -701,7 +754,7 @@ footer .link-bar-wrap .link-bar .link-bar-right ul .link a span {
     width: 100%;
     height: 100%;
   }
-  main .content .title {
+  main .content .content-title {
     max-width: 456px;
     margin-left: auto;
     margin-right: auto;
