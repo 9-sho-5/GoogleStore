@@ -633,26 +633,9 @@ footer{
                 }
             }
             .content-banner{
-            //     display: block;
-            //     padding: 0;
-
-            //     position: relative;
                 max-width: 600px;
 
                 background-color: unset;
-
-            //     .content-banner-grid-wrap, .content-banner-picture{
-            //         grid-template-columns: repeat(12, 1fr);
-            //         column-gap: 24px;
-            //         padding: 0 24px;
-            //     }
-            //     .content-banner-grid-wrap{
-            //         position: absolute;
-            //         top: 0;
-            //         .tx-wrap, .content-banner-picture{
-            //             grid-column-start: 2;
-            //             grid-column-end: span 10;
-            //         }
                     .tx-wrap{
                         position: absolute;
                         padding: 32px 48px;
@@ -663,23 +646,15 @@ footer{
                             letter-spacing: -0.5px;
                         }
                     }
-            //         .content-banner-picture{
-            //             display: block;
-            //         }
-            //     }
                 .content-banner-picture{
                     &.grid-col2_10{
                         grid-column-start: 2;
                         grid-column-end: span 10;
                     }
-            //         display: block;
                     position: relative;
                     .res-1024{
                         display: block;
                     }
-            //         .res-main{
-            //             display: none;
-            //         }
                 }
             }
             .prod-wrap{
