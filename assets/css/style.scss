@@ -298,6 +298,7 @@ main{
             color: #3c4043;
         }
 
+        /* タイトルスタイリング */
         .title{
             font-family: "Google Sans",Arial,sans-serif;
             font-weight: 600;
@@ -311,6 +312,7 @@ main{
             line-height: 56px;
             letter-spacing: -0.5px;
         }
+
         .tx{
             font-family: 'Lato', sans-serif !important;
             max-width: 524px;
@@ -367,6 +369,9 @@ main{
             img{
                 width: 100%;
             }
+            .res-1024{
+                display: none;
+            }
         }
 
         .mv-grid-wrap{
@@ -398,6 +403,8 @@ main{
 
             margin-bottom: 60px;
         }
+
+        /* new products */
         .scroll-wrap{
             padding: 0 calc((100% - min(100%, 1286px))/2);
             max-width: 100% !important;
@@ -559,8 +566,8 @@ footer{
             &.grid-col2_10{
                 grid-column-start: 2;
                 grid-column-end: span 10;
-                padding: 40px 0;
             }
+            padding: 40px 0;
             max-width: 456px;
             margin: 0 auto;
             .title{
@@ -601,6 +608,9 @@ footer{
                 .res-600{
                     display: none;
                 }
+                .res-main{
+                    display: none;
+                }
             }
             .mv-grid-wrap{
                 position: relative;
@@ -620,6 +630,56 @@ footer{
                 .prod-scroll-wrap{
                     max-width: 633px;
                     margin: 0 auto;
+                }
+            }
+            .content-banner{
+            //     display: block;
+            //     padding: 0;
+
+            //     position: relative;
+                max-width: 600px;
+
+                background-color: unset;
+
+            //     .content-banner-grid-wrap, .content-banner-picture{
+            //         grid-template-columns: repeat(12, 1fr);
+            //         column-gap: 24px;
+            //         padding: 0 24px;
+            //     }
+            //     .content-banner-grid-wrap{
+            //         position: absolute;
+            //         top: 0;
+            //         .tx-wrap, .content-banner-picture{
+            //             grid-column-start: 2;
+            //             grid-column-end: span 10;
+            //         }
+                    .tx-wrap{
+                        position: absolute;
+                        padding: 32px 48px;
+                        justify-content: start;
+                        .content-banner-title{
+                            font-size: 28px;
+                            line-height: 34px;
+                            letter-spacing: -0.5px;
+                        }
+                    }
+            //         .content-banner-picture{
+            //             display: block;
+            //         }
+            //     }
+                .content-banner-picture{
+                    &.grid-col2_10{
+                        grid-column-start: 2;
+                        grid-column-end: span 10;
+                    }
+            //         display: block;
+                    position: relative;
+                    .res-1024{
+                        display: block;
+                    }
+            //         .res-main{
+            //             display: none;
+            //         }
                 }
             }
             .prod-wrap{
@@ -700,6 +760,10 @@ footer{
 }
 
 @media screen and (max-width: 600px) {
+    .px-24{
+        padding: 0 16px;
+    }
+
     header{
         .header-left{
             .item.logo{
@@ -721,6 +785,22 @@ footer{
                 }
                 .res-600{
                     display: block;
+                }
+            }
+        }
+        .content{
+            .content-banner{
+                .content-banner-grid-wrap{
+                    grid-template-columns: repeat(4, 1fr);
+                    column-gap: unset;
+                    .tx-wrap{
+                        max-width: unset;
+                        padding: 32px 16px;
+                    }
+                    .grid-col2_10{
+                        grid-column-start: 1;
+                        grid-column-end: span 4;
+                    }
                 }
             }
         }
